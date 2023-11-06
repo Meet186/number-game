@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="li">Home</li>
+            <li id="li">About</li>
+            <li id="li">Privacy</li>
+        </ul>
+    </nav>
+
+    <div id="wripper">
+        <div class="box-1">
+        <h1>Number gussing game</h1>
+        <p>Try and guss a number between 1 to 100</p>
+        <p>you have 10 attemps to guess the right number</p>
+    </div>
+
+            <form class="form">
+                <label for="guessField" id="guess">Guess a number</label>
+                <input type="text" id="guessField" class="guessField">
+                <input type="submit" value="Sumit guess" id="subt" class="guessSumbit">
+            </form>
+
+            <div class="resultparas">
+                <p>Previous Guesses : <span class="guesses"></span> </p>
+                <p>Guesses Remaining : <span class="lastResult">10</span></p>
+                <p class="lowOrhi"></p>
+            </div>
+
+    </div>
+</body>
+<script src="./app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./gsap.js"></script>
+
+</html>
